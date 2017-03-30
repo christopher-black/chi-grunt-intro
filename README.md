@@ -147,7 +147,7 @@ module.exports = function(grunt) {
     uglify: {
       client: {
         // src can be an array [] or wildcard '*.js'
-        src: 'clients/script/client.js',
+        src: 'client/scripts/client.js',
         dest: 'server/public/scripts/client.min.js'
       }
     },
@@ -172,15 +172,15 @@ module.exports = function(grunt) {
         // List of files to copy
         src: ['index.html'], // Could use ['*.html'] or ['*.*']
         // Destination, where should we put them?
-        dest: 'server/public/views/'         
+        dest: 'server/public/views/'
       },
-      // No sub tasks for watch
-      watch: {
-        // What files am I looking at
-        files: ['client/script/*.js', 'client/views/*.html'],
-        // What tasks should I complete
-        tasks: ['uglify', 'copy']
-      }
+    },
+    // No sub tasks for watch
+    watch: {
+      // What files am I looking at
+      files: ['client/scripts/*.js', 'client/views/*.html'],
+      // What tasks should I complete
+      tasks: ['uglify', 'copy']
     }
   });
   // LOAD PLUGIN: Bring the plugin into the project
