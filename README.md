@@ -29,7 +29,7 @@ The three plugins we'll be covering today:
 - `npm install grunt --save`
 - Create `Gruntfile.js` in your **root** directory
 
-### How to I install plugins?
+### How do I install plugins?
 
 **COPY PLUGIN**
 
